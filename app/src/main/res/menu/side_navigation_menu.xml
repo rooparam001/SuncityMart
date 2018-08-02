@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mens_wear"
+        android:title="@string/mens_wear" />
+    <item
+        android:id="@+id/womens_wear"
+        android:title="@string/womens_wear" />
+    <item
+        android:id="@+id/accessories"
+        android:title="@string/accesories" />
+    <item
+        android:id="@+id/trackorder"
+        android:title="@string/track_order" />
+    <item
+        android:id="@+id/accountdetail"
+        android:title="@string/account_detail" />
+    <item
+        android:id="@+id/setting"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/signout"
+        android:title="@string/sign_out" />
+</menu>

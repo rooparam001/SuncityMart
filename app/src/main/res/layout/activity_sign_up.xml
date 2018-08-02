@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <include
+        android:id="@+id/toolbar_sign_up"
+        layout="@layout/skip_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_text"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signup_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="@dimen/extra_large_text_size"
+        app:layout_constraintBottom_toTopOf="@id/edit_username"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_sign_up" />
+
+    <ImageView
+        android:id="@+id/person_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_person_outline_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/edit_username"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_username"
+        app:layout_constraintTop_toBottomOf="@id/edit_username"
+        app:layout_constraintWidth_percent="0.14" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edit_username"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/edit_email_id"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/person_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_text">
+
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Username"
+            android:textColor="@color/blue"
+            android:textColorLink="@color/blue"
+            android:textSize="@dimen/medium_text_size" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/email_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_email_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/edit_email_id"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_email_id"
+        app:layout_constraintTop_toBottomOf="@id/edit_email_id"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edit_email_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/edit_phone_no"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/email_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_username">
+
+
+        <EditText
+            android:id="@+id/edit_emailid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textColor="@color/blue"
+            android:textColorLink="@color/blue"
+            android:textSize="@dimen/medium_text_size" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/phone_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_phone_iphone_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/edit_phone_no"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_phone_no"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone_no"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edit_phone_no"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/edit_password_id"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/phone_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email_id">
+
+        <EditText
+            android:id="@+id/edit_phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/phone_no"
+            android:textColor="@color/blue"
+            android:textColorLink="@color/blue"
+            android:textSize="@dimen/medium_text_size" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/password_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_lock_outline_black_24dp"
+        app:layout_constraintBottom_toTopOf="@id/edit_password_id"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_password_id"
+        app:layout_constraintTop_toBottomOf="@id/edit_password_id"
+        app:layout_constraintWidth_percent="0.14" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edit_password_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="10dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/register_button"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toRightOf="@id/password_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_phone_no">
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/medium_text_size" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/button_layout"
+        android:backgroundTint="@color/blue"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_password_id" />
+
+</android.support.constraint.ConstraintLayout>

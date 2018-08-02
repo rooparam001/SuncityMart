@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Suncity Mart</string>
+    <string name="suncity">Suncity</string>
+    <string name="mart">Mart</string>
+    <string name="powered_by">Powered By SuncityTechno</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--welcome page-->
+    <string name="welcome_to">Welcome to</string>
+    <string name="suncity_mart">Suncity Mart</string>
+    <string name="shop_mart">Shop Mart</string>
+    <string name="started_text">Each online store has its own store and bag, but if you want to go shopping in multiple places at once,so you
+        only have one bag.</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+
+    <!--toolbar text-->
+    <string name="skip">Skip</string>
+
+    <!--Sign in Page-->
+    <string name="forget_id">Forgot password ?</string>
+    <string name="login">Login</string>
+
+    <!--Sign Up page-->
+    <string name="phone_no">Mobile Number</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--bottom navigation-->
+    <string name="home">Home</string>
+    <string name="hot_offer">Hot Offer</string>
+    <string name="my_cart">My Cart</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+
+    <!--Navigation drawer-->
+    <string name="mens_wear">Men\'s Wear</string>
+    <string name="womens_wear">Women\'s Wear</string>
+    <string name="wallets">Wallet and bags</string>
+    <string name="western">Western Wear</string>
+    <string name="jewellery">Jewellery</string>
+    <string name="accesories">Accessories</string>
+    <string name="track_order">Track Order</string>
+    <string name="account_detail">Account Details</string>
+    <string name="settings">Settings</string>
+    <string name="sign_out">Sign Out</string>
+
+</resources>
