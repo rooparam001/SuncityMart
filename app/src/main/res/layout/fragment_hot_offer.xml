@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".HotOfferFragment">
+
+    <ImageView
+        android:id="@+id/hot_offer_first_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/hot_offer_third_image"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/hot_offer_second_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@color/colorPrimaryDark"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/hot_offer_third_image"
+        app:layout_constraintTop_toBottomOf="@id/hot_offer_first_image"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <ImageView
+        android:id="@+id/hot_offer_third_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@color/colorPrimary"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toRightOf="@id/hot_offer_second_image"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_offer_first_image"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+
+    <ImageView
+        android:id="@+id/hot_offer_fourth_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@color/green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hot_offer_second_image" />
+
 
 </android.support.constraint.ConstraintLayout>
